@@ -1,58 +1,129 @@
-export const images = [
+export const skills = [
   {
-    name: "Landing Page Of CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762357768/1_mnrry5.jpg",
+    title: "Languages & Frameworks",
+    items: [
+      "Java",
+      "JavaScript/TypeScript",
+      "Python",
+      "Next.js",
+      "React",
+      "Node.js/Express.js",
+    ],
   },
   {
-    name: "Review Page Of CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762357772/2_jfddlx.jpg",
+    title: "System Design & Backend",
+    items: [
+      "REST APIs",
+      "Redis (Valkey) Pub/Sub",
+      "WebSockets",
+      "BullMQ Job Queues",
+      "Apache Kafka",
+      "Authentication / JWT",
+    ],
   },
   {
-    name: "Resume Analysis Overview Of CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762357769/3_xmmqnb.jpg",
+    title: "Databases & Infra",
+    items: [
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "Qdrant/Neo4j",
+      "Docker & PM2",
+      "Nginx/Caddy",
+    ],
   },
   {
-    name: "Overview Analysis Of CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762357769/4_tusalf.jpg",
+    title: "DevOps & Deployment",
+    items: [
+      "AWS EC2",
+      "S3",
+      "Load Balancer",
+      "Render",
+      "Vercel",
+      "Bare Metal Deployment",
+    ],
   },
   {
-    name: "AI Resume-Assistant Of CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762357769/5_qebocj.jpg",
+    title: "AI / ML / GenAI",
+    items: [
+      "LangChain",
+      "OpenAI Agent SDK",
+      "LangGraph",
+      "RAG Pipelines",
+      "Transformers",
+      "Vector Stores",
+    ],
   },
   {
-    name: "Workflow Of CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762357769/6_rbaakn.jpg",
-  },
-  {
-    name: "AI-Microservice CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762357769/7_qtzavl.jpg",
-  },
-  {
-    name: "NER Model Results Of CareerPulse AI",
-    url: "https://res.cloudinary.com/dah7l8utl/image/upload/v1762358293/Screenshot_2025-11-05_181247_jgixux.png",
+    title: "Core Subjects",
+    items: [
+      "Database Management Systems",
+      "Computer Networks",
+      "Operating Systems",
+      "Data Structures & Algorithms",
+      "Java Programming",
+    ],
   },
 ];
 
-export const teamMembers = [
+export const projects = [
   {
-    name: "Priyanshu Saha",
-    role: "Team Leader",
-    link: "https://www.linkedin.com/in/priyanshu-saha-339571262/",
-    imageUrl:
-      "https://res.cloudinary.com/dah7l8utl/image/upload/v1762360404/WhatsApp_Image_2025-11-05_at_22.02.59_374f714e_zokxos.jpg",
+    name: "CareerPulse AI (Team Project)",
+    desc: "AI-powered Resume Intelligence system using Transformers, NER, ML scoring system, resume classification, ATS scoring, skill gap detection, and automated suggestions.",
+    tech: ["Next.js", "Node.js", "Python", "SpaCy", "Scikit-learn", "MongoDB"],
+    link: "https://github.com/YashPandey1405/CareerPulse-AI",
   },
   {
-    name: "Divyam Jain",
-    role: "Team Member",
-    link: "https://www.linkedin.com/in/divyam-jain-079a16265/",
-    imageUrl:
-      "https://res.cloudinary.com/dah7l8utl/image/upload/v1762360440/WhatsApp_Image_2025-11-05_at_22.03.39_8b68ddc8_gupidw.jpg",
+    name: "TaskNexus",
+    desc: "Full-stack Kanban task management system with JWT auth & 6 MongoDB Collections, file uploads, email automation, and full RBAC. Backend on Render, Frontend on Vercel.",
+    tech: [
+      "MERN",
+      "Zustand",
+      "TanStack",
+      "Multer",
+      "Cloudinary",
+      "JWT",
+      "NodeMailer",
+    ],
+    link: "https://github.com/YashPandey1405/TaskNexus",
   },
   {
-    name: "Yash Pandey (Me)",
-    role: "Team Member",
-    link: "https://www.linkedin.com/in/yashpandey29/", // Added your LinkedIn link here for consistency
-    imageUrl:
-      "https://res.cloudinary.com/dah7l8utl/image/upload/v1762360508/YP_Photo-5_efqalh.jpg",
+    name: "System Design Journey",
+    desc: "Redis Pub/Sub scaling, horizontally scaled WebSockets, Kafka events, PM2 + Caddy reverse proxy, AWS deployment, autoscaling, and microservice breakdown.",
+    tech: ["Redis", "Kafka", "Bare Metal", "Linode", "Docker", "AWS"],
+    link: "https://github.com/YashPandey1405/System-Design-Journey",
   },
+  {
+    name: "GenAI Learning Journey",
+    desc: "Agentic AI, RAG , Qdrant vector database, Neo4j memory chains, multi-agent,OpenAI Agent SDK, WebRTC real-time conversational AI & Docker deployment",
+    tech: ["RAG", "OpenAI Agent SDK", "Qdrant", "Neo4j", "LangChain", "WebRTC"],
+    link: "https://github.com/YashPandey1405/Perplexa-AI",
+  },
+  {
+    name: "AIML Mastery Path",
+    desc: "TensorFlow models, anomaly detection, supervised & unsupervised ML, Deep Learning concepts in real-world TensorFlow projects through organized notes, end-to-end workflows",
+    tech: [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Data Science",
+    ],
+    link: "https://github.com/YashPandey1405/AIML-Mastery-Path",
+  },
+  {
+    name: "Safe Bank Assistant",
+    desc: "Banking-focused conversational AI assistant with secure intent handling, identity workflow, anti-hallucination guardrails, rule-based validation, and safe financial query responses using LLM & controlled actions.",
+    tech: ["Node.js", "OpenAI", "Guardrails", "Prompt Engineering"],
+    link: "https://github.com/YashPandey1405/safe-bank-assistant",
+  },
+];
+
+export const achievements = [
+  "Solved 700+ DSA problems on LeetCode (Java)",
+  "HackwithMAIT 3.0 — Built MERN healthcare platform",
+  "CareerPulse AI — Built AI Resume Intelligence system",
+  "Built real-time Conversational AI with WebRTC + Agent SDK",
+  "Horizontally scaled WebSockets using Redis Pub/Sub",
+  "Lost 18kg bodyweight with discipline & consistency",
 ];
