@@ -329,10 +329,12 @@ export default function Portfolio() {
 
         <motion.a
           variants={fadeUp}
-          href="mailto:pandeyyash041@gmail.com"
+          href="https://forms.gle/pVEL8GuNUSjfuCea7"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-8 py-3 bg-sky-500 rounded-full text-white font-bold hover:bg-sky-600 transition shadow-xl"
         >
-          Contact Me 👋
+          Contact With Me 👋
         </motion.a>
       </motion.section>
 
