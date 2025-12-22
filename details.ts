@@ -5,28 +5,24 @@ export const skills = [
       "Java",
       "JavaScript/TypeScript",
       "Python",
-      "Next.js",
-      "React",
+      "React & Next.js",
       "Node.js/Express.js",
     ],
   },
   {
     title: "System Design & Backend",
     items: [
-      "REST APIs",
+      "REST APIs & JWT",
       "Redis (Valkey) Pub/Sub",
       "WebSockets",
-      "BullMQ Job Queues",
-      "Apache Kafka",
-      "Authentication / JWT",
+      "BullMQ & Kafka",
     ],
   },
   {
     title: "Databases & Infra",
     items: [
-      "MongoDB",
+      "MongoDB & MySQL",
       "PostgreSQL",
-      "MySQL",
       "Qdrant/Neo4j",
       "Docker & PM2",
       "Nginx/Caddy",
@@ -35,8 +31,7 @@ export const skills = [
   {
     title: "DevOps & Deployment",
     items: [
-      "AWS EC2",
-      "S3",
+      "AWS EC2 & S3",
       "Load Balancer",
       "Render",
       "Vercel",
@@ -51,18 +46,11 @@ export const skills = [
       "LangGraph",
       "RAG Pipelines",
       "Transformers",
-      "Vector Stores",
     ],
   },
   {
     title: "Core Subjects",
-    items: [
-      "Database Management Systems",
-      "Computer Networks",
-      "Operating Systems",
-      "Data Structures & Algorithms",
-      "Java Programming",
-    ],
+    items: ["DBMS", "Computer Networks", "Operating Systems", "DSA In Java"],
   },
 ];
 
@@ -76,15 +64,7 @@ export const projects = [
   {
     name: "TaskNexus",
     desc: "Full-stack Kanban task management system with JWT auth & 6 MongoDB Collections, file uploads, email automation, and full RBAC. Backend on Render, Frontend on Vercel.",
-    tech: [
-      "MERN",
-      "Zustand",
-      "TanStack",
-      "Multer",
-      "Cloudinary",
-      "JWT",
-      "NodeMailer",
-    ],
+    tech: ["MERN", "Zustand", "TanStack", "Multer", "Cloudinary", "NodeMailer"],
     link: "https://github.com/YashPandey1405/TaskNexus",
   },
   {
@@ -96,7 +76,7 @@ export const projects = [
   {
     name: "GenAI Learning Journey",
     desc: "Agentic AI, RAG , Qdrant vector database, Neo4j memory chains, multi-agent,OpenAI Agent SDK, WebRTC real-time conversational AI & Docker deployment",
-    tech: ["RAG", "OpenAI Agent SDK", "Qdrant", "Neo4j", "LangChain", "WebRTC"],
+    tech: ["RAG", "OpenAI Agent SDK", "Qdrant", "Neo4j", "WebRTC"],
     link: "https://github.com/YashPandey1405/Perplexa-AI",
   },
   {
@@ -121,9 +101,9 @@ export const projects = [
 
 export const achievements = [
   "Solved 700+ DSA problems on LeetCode (Java)",
-  "HackwithMAIT 3.0 — Built MERN healthcare platform",
-  "CareerPulse AI — Built AI Resume Intelligence system",
-  "Built real-time Conversational AI with WebRTC + Agent SDK",
-  "Horizontally scaled WebSockets using Redis Pub/Sub",
-  "Lost 18kg bodyweight with discipline & consistency",
+  "Built a MERN healthcare platform (HackwithMAIT 3.0)",
+  "Developed CareerPulse AI — resume intelligence system",
+  "Built real-time conversational AI (WebRTC + Agent SDK)",
+  "Implemented horizontally scalable WebSockets with Redis",
+  "Achieved 18 kg weight loss through discipline and consistency",
 ];
