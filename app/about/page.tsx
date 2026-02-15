@@ -19,6 +19,9 @@ import {
   Braces,
   Download,
   ShieldCheck,
+  Calendar,
+  MapPin,
+  Briefcase,
 } from "lucide-react";
 
 // Types
@@ -35,7 +38,7 @@ interface SkillCategory {
 }
 
 // Import data from your existing file
-import { skills, projects, achievements } from "@/details";
+import { skills, projects, achievements, experiences } from "@/details";
 
 export default function PortfolioPage() {
   const { scrollYProgress } = useScroll();
@@ -230,6 +233,97 @@ export default function PortfolioPage() {
           </div>
         </section>
 
+        {/* EXPIRENCE SECTION */}
+        <section id="experience" className="pt-32">
+          <SectionHeader
+            title="Professional Tenure"
+            subtitle="Building scalable infrastructure and financial systems."
+          />
+
+          <div className="relative flex flex-col gap-12 mt-16 px-4">
+            {/* Vertical Timeline Line */}
+            <div className="absolute left-10 md:left-14 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-sky-500/20 to-transparent hidden sm:block" />
+
+            {experiences.map((exp, i) => (
+              <motion.article
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="group relative flex flex-col md:flex-row gap-8 items-start"
+              >
+                {/* Timeline Node Icon */}
+                <div className="relative z-10 shrink-0 mt-4 hidden sm:flex items-center justify-center w-12 h-12 rounded-2xl bg-[#080808] border border-white/10 text-sky-400 group-hover:border-sky-500/50 group-hover:shadow-[0_0_20px_rgba(14,165,233,0.15)] transition-all duration-500">
+                  <Briefcase size={22} />
+                </div>
+
+                {/* Experience Card */}
+                <div className="flex-1 rounded-3xl border border-white/5 bg-[#080808] p-8 md:p-10 hover:border-sky-500/40 hover:bg-[#0A0A0A] transition-all duration-500 shadow-2xl">
+                  <div className="flex flex-col xl:flex-row xl:items-start justify-between gap-6">
+                    <div className="space-y-4 flex-1">
+                      <div>
+                        <h3 className="text-2xl font-bold text-white tracking-tight">
+                          {exp.role}
+                        </h3>
+                        <div className="flex flex-wrap items-center gap-2 mt-1">
+                          <span className="text-sky-400 font-semibold text-lg">
+                            {exp.company}
+                          </span>
+                          <span className="text-gray-600 hidden md:block">
+                            •
+                          </span>
+                          <span className="px-2.5 py-0.5 rounded-full bg-white/5 text-gray-500 text-xs font-medium border border-white/5 uppercase tracking-wider">
+                            {exp.type}
+                          </span>
+                        </div>
+                      </div>
+
+                      <ul className="space-y-4 mt-6">
+                        {exp.highlights.map((highlight, idx) => (
+                          <li
+                            key={idx}
+                            className="flex gap-4 text-gray-400 leading-relaxed font-light text-[15px]"
+                          >
+                            <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-sky-500/40 shrink-0" />
+                            {highlight}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Meta Info (Date & Location) */}
+                    <div className="flex flex-col md:flex-row xl:flex-col xl:items-end gap-3 shrink-0">
+                      <div className="flex items-center gap-2.5 px-4 py-2 rounded-xl bg-white/[0.03] border border-white/5 text-gray-300 text-sm font-mono whitespace-nowrap">
+                        <Calendar size={14} className="text-sky-500" />
+                        {exp.startDate} — {exp.endDate}
+                      </div>
+                      <div className="flex items-center gap-2 px-4 py-1 text-gray-500 text-xs italic">
+                        <MapPin size={12} />
+                        {exp.location}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Tech Stack Footer */}
+                  <div className="mt-10 pt-8 border-t border-white/5">
+                    <div className="flex flex-wrap gap-2">
+                      {exp.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="text-[11px] font-mono tracking-wider px-3 py-1.5 rounded-lg bg-white/[0.02] text-gray-400 border border-white/5 group-hover:border-sky-500/20 group-hover:text-sky-300 transition-colors"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.article>
+            ))}
+          </div>
+        </section>
+
         {/* PROJECTS SECTION - SYMMETRIC GRID */}
         <section id="projects" className="py-32">
           <SectionHeader
@@ -417,6 +511,7 @@ function FloatingNav() {
             className="object-cover scale-110"
           />
         </div>
+        <NavLink href="#experience">Experience</NavLink>
         <NavLink href="#projects">Work</NavLink>
         <NavLink href="#skills">Stack</NavLink>
         <NavLink href="#contact">Contact</NavLink>

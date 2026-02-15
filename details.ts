@@ -107,3 +107,35 @@ export const achievements = [
   "Implemented horizontally scalable WebSockets with Redis",
   "Achieved 18 kg weight loss through discipline and consistency",
 ];
+
+export const experiences = [
+  {
+    company: "Nucleus Software Exports Ltd.",
+    role: "Assistant Software Engineer",
+    type: "Full Time",
+    startDate: "Feb 2026",
+    endDate: "Present",
+    location: "Noida, India",
+    techStack: ["Java", "Spring Boot", "Software Development", "System Design"],
+    highlights: [
+      "Completed corporate onboarding and transitioned into structured backend training program",
+      "Preparing to contribute to enterprise-scale financial software systems",
+      "Strengthening understanding of large-scale architecture and production-grade coding standards",
+    ],
+  },
+  {
+    company: "EduAI By SuperHuman",
+    role: "Software & AI Developer Intern",
+    type: "Internship",
+    startDate: "Jan 2026",
+    endDate: "Feb 2026",
+    location: "Remote",
+    techStack: ["React", "Python", "OAuth", "MongoDB", "Google Cloud", "pdfjs"],
+    highlights: [
+      "Contributed to a live production-grade AI platform using structured Git workflows (feature branches, PR reviews, WIP sync), delivering features and resolving real-world production bugs.",
+      "Diagnosed and resolved a critical Google OAuth production misconfiguration, restoring authentication by correcting domain-level client settings and environment variables.",
+      "Enhanced mobile responsiveness across core React routes and integrated PDF rendering (pdfjs) and dynamic data visualization (Chart.js).",
+      "Explored multimodal RAG pipelines and gained hands-on exposure to Google Cloud Vertex AI, structuring PDFs, images, and conversational context into AI-ready inputs.",
+    ],
+  },
+];
